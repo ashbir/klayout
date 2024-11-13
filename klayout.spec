@@ -5,7 +5,7 @@
 
 Name:           klayout
 Version:        0.29.8
-Release:        0
+Release:        1{?dist}
 Summary:        KLayout, viewer and editor for mask layouts
 License:        GPL-2.0+
 Group:          Productivity/Scientific/Electronics
@@ -118,3 +118,4 @@ install -Dm644 %{_builddir}/%{name}-%{version}/etc/logo.png %{buildroot}%{_datad
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
+%autochangelog/*
