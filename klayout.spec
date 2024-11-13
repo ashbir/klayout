@@ -9,8 +9,8 @@ Release:        0
 Summary:        KLayout, viewer and editor for mask layouts
 License:        GPL-2.0+
 Group:          Productivity/Scientific/Electronics
-Url:            http://www.klayout.de
-Source0:        http://www.klayout.de/downloads/%{name}-%{version}.tar.gz
+Url:            https://www.klayout.de
+Source0:        https://www.klayout.de/downloads/%{name}-%{version}.tar.gz
 # BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 # Disable auto-detection of dependencies (to prevent including the
