@@ -5,7 +5,7 @@
 
 Name:           klayout
 Version:        0.29.8
-Release:        1{?dist}
+Release:        1%{?dist}
 Summary:        KLayout, viewer and editor for mask layouts
 License:        GPL-2.0+
 Group:          Productivity/Scientific/Electronics
