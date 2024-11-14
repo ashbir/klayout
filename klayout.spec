@@ -27,8 +27,11 @@ BuildRequires:  qt5-qttools-devel
 BuildRequires:  ruby-devel
 BuildRequires:  zlib-devel
 BuildRequires:  python3-devel
+%if 0%{?rhel} == 8 
+BuildRequires:  libgit2_1.7-devel
+%else
 BuildRequires:  libgit2-devel
-
+%endif
 Requires: ruby 
 Requires: python3
 Requires: qt5-qtbase 
@@ -41,7 +44,11 @@ Requires: qt5-qttools
 Requires: qt5-qttools-devel 
 # Needed by something else (still?)
 Requires: http-parser 
-Requires: libgit2
+%if 0%{?rhel} == 8 
+BuildRequires:  libgit2_1.7
+%else
+BuildRequires:  libgit2
+%endif
 
 %description
 Mask layout viewer and editor for the chip design engineer.
