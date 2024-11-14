@@ -5,7 +5,7 @@
 
 Name:           klayout
 Version:        0.29.8
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        KLayout, viewer and editor for mask layouts
 License:        GPL-2.0+
 Group:          Productivity/Scientific/Electronics
@@ -45,9 +45,9 @@ Requires: qt5-qttools-devel
 # Needed by something else (still?)
 Requires: http-parser 
 %if 0%{?rhel} == 8 
-BuildRequires:  libgit2_1.7
+Requires:  libgit2_1.7
 %else
-BuildRequires:  libgit2
+Requires:  libgit2
 %endif
 
 %description
